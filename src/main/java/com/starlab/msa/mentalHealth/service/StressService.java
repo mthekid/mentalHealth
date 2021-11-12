@@ -1,4 +1,11 @@
 package com.starlab.msa.mentalHealth.service;
 
-public class StressService {
+import com.starlab.msa.mentalHealth.domain.stress.StressAnswer;
+
+import java.util.List;
+
+public interface StressService {
+
+    StressAnswer getRecentStressAnswer(Long userid);
+    List<StressAnswer> getAllStressAnswer(Long userid);
 }
